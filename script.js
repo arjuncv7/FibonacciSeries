@@ -6,7 +6,7 @@ const calcFibonacci = (f0, f1, n) => {
     }
     return fibSequence[Math.abs(n)];
   } else {
-    for (let i = 2; i <=n; i++) {
+    for (let i = 2; i <= n; i++) {
       fibSequence[i] = fibSequence[i - 2] + fibSequence[i - 1];
     }
     return fibSequence[n];
@@ -18,6 +18,4 @@ while (isNaN(num)) {
   num = parseInt(prompt("Please enter an integer value for n"));
 }
 const result = calcFibonacci(0, 1, num);
-document.write(
-  "For n = " + num + " the Fibonacci number is " + result
-);
+console.log("For n = " + num + " the Fibonacci number is " + result);
